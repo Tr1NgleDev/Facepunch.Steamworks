@@ -24,7 +24,7 @@ jobs:
     - name: Build Win64 Release
       run: dotnet build Facepunch.Steamworks\Facepunch.Steamworks.Win64.csproj --configuration Release
 
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v4.4.3
       with:
         name: Compiled Files
         path: Facepunch.Steamworks/bin
